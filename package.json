@@ -1,0 +1,23 @@
+{
+  "name": "danimog",
+  "version": "1.0.0",
+  "description": "--- pageClass: home-page ---",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:build": "vuepress build",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danimog/danielemoggia-2021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danimog/danielemoggia-2021/issues"
+  },
+  "homepage": "https://github.com/danimog/danielemoggia-2021#readme",
+  "dependencies": {
+    "vuepress": "^1.7.1"
+ }
+}
