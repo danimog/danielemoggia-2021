@@ -1,8 +1,7 @@
 {
-  "name": "danimog website",
+  "name": "danimog",
   "version": "1.0.0",
   "description": "my personal website",
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
 	  "docs:build": "vuepress build"
