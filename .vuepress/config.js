@@ -11,7 +11,8 @@ module.exports = {
             { text: 'Blog', link: '/blog/' }
         ],
         head: [
-            ['link', {rel: 'stylesheet', href: '@styles/index.styl'}]
+            ['link', {rel: 'stylesheet', href: '@styles/index.styl'}],
+
         ]
     },
 }

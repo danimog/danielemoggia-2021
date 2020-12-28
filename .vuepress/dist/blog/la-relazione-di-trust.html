@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>La relazione di trust.. | danieleMoggia.it</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="Come ti cambio la relazione di trust...">
+    
+    <link rel="preload" href="/assets/css/0.styles.7340d8c6.css" as="style"><link rel="preload" href="/assets/js/app.81425015.js" as="script"><link rel="preload" href="/assets/js/3.6f2bee72.js" as="script"><link rel="preload" href="/assets/js/2.f97901ab.js" as="script"><link rel="preload" href="/assets/js/9.11a28eee.js" as="script"><link rel="prefetch" href="/assets/js/10.9886164d.js"><link rel="prefetch" href="/assets/js/4.7a4c03ee.js"><link rel="prefetch" href="/assets/js/5.f96e785f.js"><link rel="prefetch" href="/assets/js/6.8b3bfcd3.js"><link rel="prefetch" href="/assets/js/7.4d8e6c12.js"><link rel="prefetch" href="/assets/js/8.f04cb071.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7340d8c6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><div class="intestazione" data-v-43363991><a href="/" class="router-link-active" data-v-43363991>Home</a> | 
+    <a href="/blog/" class="router-link-active" data-v-43363991>Blog</a> |
+    <a href="/contatti/" data-v-43363991>Contatti</a></div> <div class="content__default"><p>La collega mi chiama: il computer è bloccato non riesco ad accedere.
+Mi siedo alla postazione e controllo il PC fermo nella schermata CTRL + ALT + CANC.
+Premo la combinazione e provo il login come Administrator nella rete locale.</p> <blockquote><p>“La relazione di trust tra questa workstation e il dominio primario non riuscita”.</p></blockquote> <p>Mi pareva di aver già sistemato un tempo la cosa e probabilmente DuckDuckGo mi rinfrescherà la memoria.
+Sembra in effetti semplice la risoluzione che il supporto tecnico di Windows fornisce a questa pagina:
+<a href="https://support.microsoft.com/it-it/help/2771040/the-trust-relationship-between-this-workstation-and-the-primary-domain" target="_blank" rel="noopener noreferrer">https://support.microsoft.com/it-it/help/2771040/the-trust-relationship-between-this-workstation-and-the-primary-domain<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>Ritorno al PC riavvio e accedo ad Administrator del PC (e non della rete locale).
+<strong>La password. Primo tentativo vuota, a vuoto.</strong>
+Riprovo con le password conosciute.
+Niente.
+Panico.
+Inizio la mia lunga giornata a cercare una soluzione. Connessione da ufficio lentissima, non riesco a scaricare a modo i tool che la ricerca su Internet mi dice.
+La ricerca si concentra su come resettare la password di Administrator. In rete si trova di tutto. Provo con il safe mode: niente.
+Tento con il safe mode con console. Di nuovo nulla di fatto, la console non esce e mi presenta sempre il famigerato CTRL + ALT + CANC.
+Provo a scaricare windows password recovery ma la versione free non consente nulla.
+Ancora ricerca su internet ma pare nessuno abbia questo problema.
+Ritorno allora su un tool di reset della password. Scarico (in oltre 45 minuti..) Ophcrack.
+Lo carico su una penna USB che rendo bootabile.
+Procedo sul pc “malato” ma dei 3 account presenti non riesce a risolvere la password di nessuno di essi.
+<strong>E’ quasi ora di pranzo e il computer è sempre bloccato.</strong>
+Ancora rete, ancora forum, ancora tentativi.
+Lancio il download di un programmino che promette bene: <a href="http://pogostick.net/~pnh/ntpasswd/" target="_blank" rel="noopener noreferrer">http://pogostick.net/~pnh/ntpasswd/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+Fantastico il loro sito (schermata grigio con caratteri neri e bottoni “primi anni 2000 style”. Parte il download. Oltre 20 minuti.
+Seguo le istruzioni:</p> <blockquote><p>How to make an bootable USB drive
+Copy all the files that is inside the usbXXXXXX.zip or on the CD onto an usb drive, directly on the drive, not inside any directory/folder.
+It is OK if there are other files on the USB drive from before, they will not be removed.
+Install bootloader on the USB drive, from command prompt in windows (start the command line with “run as administrator” if possible)
+X:syslinux.exe -ma X:
+Replace X: with the drive letter the USB drive shows up as (DO NOT USE C:)
+If it seems like nothing happened, it is usually done.
+However, a file named ldlinux.sys may appear on the USB drive, that is normal.
+It should now in theory be bootable.
+Please know that getting some computers to boot from USB is worse than from CD, you may have to change settings, or some will not simply work at all.</p></blockquote> <p>Però io sto lavorando da mac… Prendo un altro computer, windows e dopo qualche minuto lancio un prompt dei comandi come amministratore (certo che il terminale mac o la shell di linux sono più comodi ma il prompt per renderlo amministratore lo fai cliccando con tasto destro e lanciarlo come “Run as administrator”.
+Seguo i dettami del sito e finalmente ho la penna usb pronta.
+Inserisco nel PC bloccato e lancio il boot da USB.
+Mi carica un OS minimale senza grafica. Seguo i passi.
+Mi chiede quale utente voglio modificare e scelgo un utente terzo (rispetto l’admin e il guest) ma sempre con diritti di amministratore del sistema.
+Resetto la password ed esco.
+Riavvio il pc ma nulla, l’inserimento della password vuota non funziona ed anzi mi blocca l’utente.
+Ci riprovo. Ma questa volta salvo la modifica (nei precedenti tentativi lasciavo l’opzione di default N).
+Finalmente al riavvio e alla selezione dell’utente la password vuota funziona.
+Accedo al PC. E da questo punto in poi posso modificare le password (anche quella da Amministratore!) e così poi seguire la prima semplice guida per sistemare l’errore iniziale:</p> <div class="language-sh extra-class"><pre class="language-sh"><code>Utilizzare un account di amministratore locale per l’accesso al computer.
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>Selezionare Start, premere e tenere premuto <span class="token punctuation">(</span>o destro<span class="token punctuation">)</span> Computer <span class="token operator">&gt;</span> , proprietà.
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>Selezionare Modifica impostazioni accanto al nome del computer.
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>Nella scheda Nome Computer , selezionare Modifica.
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>Sotto il titolo di membro di , selezionare gruppo di lavoro, digitare un nome di gruppo di lavoro e quindi scegliere OK.
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>Quando viene chiesto di riavviare il computer, scegliere OK.
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>Nella scheda Nome Computer , selezionare Modifica nuovamente.
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>Sotto il titolo, membro del dominio selezionare e quindi digitare il nome di dominio.
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>Fare clic <span class="token function">su</span> OK e quindi digitare le credenziali dell’utente che disponga delle autorizzazioni nel dominio.
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>Quando viene chiesto di riavviare il computer, scegliere OK.
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>Riavviare il computer.
+</code></pre></div><p>Finalmente dopo una estenuante giornata a surfare sul web la collega accede al suo Computer.</p></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.81425015.js" defer></script><script src="/assets/js/3.6f2bee72.js" defer></script><script src="/assets/js/2.f97901ab.js" defer></script><script src="/assets/js/9.11a28eee.js" defer></script>
+  </body>
+</html>
