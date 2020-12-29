@@ -7,8 +7,8 @@
 - Medium :point_right: [@medium](https://medium.com/@danielemoggia)
   
 ## Dove NON mi trovi
-- Facebook
-- Instagram
-- Twitter
-- Whatsapp
+- :x: Facebook
+- :x: Instagram
+- :x: Twitter
+- :x: Whatsapp
   
