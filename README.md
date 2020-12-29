@@ -4,7 +4,7 @@ pageClass: home-page
 
 # :wine_glass: piacere, Daniele!
 
-*tema minimale per portfolio e blog personale*
+*ho sviluppato un tema minimale con [VuePress](https://vuepress.vuejs.org/) per un portfolio e un blog personale*
 <br><br><br>
 ***
 <br><br><br>  
