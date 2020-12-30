@@ -12,7 +12,7 @@ pageClass: home-page
 
 - Sciacchetrail: [un progetto, una corsa lungo i sentieri delle Cinque Terre](https://sciacchetrail.com)
 - Sito Unesco - Porto Venere, Cinque Terre e isole: [il sito del sito Unesco](https://www.portovenerecinqueterreisole.com)
-- Casa Capellini 5 Terre: [il sito di una struttura ricettiva, a Manarola - Cinque Terre](https://casacapellini-5terre.com)
+- Casa Capellini 5 Terre: [il sito di una struttura ricettiva, a Manarola - Cinque Terre](https://casacapellini-5terre.it)
 - Cinque Terre Trekking: [un ecommerce, un sito, un piccolo ma importante negozio](https://www.cinqueterretrekking.com)
 - Dove siamo a lavorare: [APP in Nuxt.js per i lavori del Parco Cinque Terre](https://parconuxt.netlify.app)
 
